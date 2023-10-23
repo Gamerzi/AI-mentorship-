@@ -1,0 +1,253 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Style the sidebar */
+.sidebar {
+    width: 350px; /* Adjust the width as needed */
+    background-color: #0d0c0cdd; /* Background color of the sidebar */
+    position: fixed; /* Keeps the sidebar fixed while scrolling */
+    height: 100%; /* Make it cover the entire viewport height */
+    border-radius: 25px;
+}
+
+/* Style the list items */
+.sidebar ul {
+    list-style: none; /* Remove default list bullet points */
+    padding: 0;
+}
+
+/* Style the navigation links */
+.sidebar li {
+    padding: 35px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #888; /* Text color of the links */
+    display: block; /* Makes the links take up the full width of the sidebar */
+    font-weight: bold; 
+    font-family: 'Georgia', serif; /* Makes the links take up the full width of the sidebar */
+    font-size: 25px;
+    transition: color 0.2s; 
+    transition: font-size 0.2s; 
+}
+
+main {
+    margin-left: 250px; /* Adjust the margin to accommodate the sidebar width */
+}
+/* Your existing CSS styles here */
+
+/* Hide the navigation bar by default */
+.sidebar{
+    display: none;
+}
+
+#Hamburger:checked + .sidebar{
+    display: block;
+}
+label{
+        cursor: pointer; 
+        padding: 20px;
+        color: #ffffff; 
+        text-align: center; 
+        font-size: 22px; 
+}
+.sidebar a:hover {
+    color: #fff; /* Brighten the color on hover */
+    font-size: 30px; /* Add background color on hover for a pop-out effect */
+}
+/* Style the main content container */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Style the left content */
+.left-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.left-content h2 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.left-content p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #a5a0a0;
+}
+
+.action-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0074D9; /* Button color */
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Add a smooth transition effect */
+    border-radius: 2rem;
+}
+
+.action-buttons a:hover {
+    transform: scale(1.1); /* Scale the button up slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    size: 35px;
+}
+
+/* Style the right content */
+.right-content {
+    flex: 1;
+    text-align: center;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+}
+#AI:hover {
+    cursor: pointer;
+    color: #0074D9; /* Change to the desired hover color */
+    font-size: 30px; /* Increase by 5 pixels */
+    transition: color 0.3s, font-size 0.3s;
+}
+/* Style the feature card */
+.feature-card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Style the feature title */
+.feature-card h3 {
+    font-size: 20px;
+    margin: 0;
+}
+.feature-card2 h3 {
+    font-size: 25px;
+    margin: 0;
+}
+.feature-card3 h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Style the feature description */
+.feature-card p {
+    font-size: 18px;
+}
+.feature-card2 p {
+    font-size: 18px;
+}
+.feature-card3 p {
+    font-size: 18px;
+}
+.feature-card2 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature-card3 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cards{
+    display: flex;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bolder;
+    font-size: 45px;
+}
+/* Apply the pop-out effect on hover for feature cards */
+.feature-card:hover {
+    cursor: pointer;
+    transform: scale(1.15); /* Scale the card up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+    
+}
+.feature-card2:hover {
+    cursor: pointer;
+    transform: scale(1.15); /* Scale the card up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+
+}
+.feature-card3:hover {
+    cursor: pointer;
+    transform: scale(1.15); /* Scale the card up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+.faq {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+}
+.question {
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.summary {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+}
+.answer {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.cls{
+    color: white;
+    text-align: center;
+
+}
+#changing-image{    
+    transition: opacity 1s;
+}
